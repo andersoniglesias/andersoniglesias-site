@@ -18,4 +18,22 @@ export const tools: Tool[] = [
     href: "/ferramentas/calculadora-price",
     category: "Financeiro",
   },
+  {
+    title: "Simulador CDI Profissional",
+    desc: "Rendimento atrelado ao CDI com aportes e IR regressivo (estimado).",
+    href: "/ferramentas/simulador-cdi",
+    category: "Financeiro",
+  },
+  {
+    title: "Simulador de Meta Financeira",
+    desc: "Descubra quanto investir por mês para atingir uma meta com taxa composta.",
+    href: "/ferramentas/meta-financeira",
+    category: "Financeiro",
+  },
+  {
+  title: "Conversor Dólar ↔ Real",
+  desc: "Converta USD para BRL e BRL para USD com spread opcional (ideal para cartão internacional).",
+  href: "/ferramentas/conversor-dolar",
+  category: "Financeiro",
+},
 ];

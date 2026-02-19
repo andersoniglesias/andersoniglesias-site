@@ -1,45 +1,83 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      <div className="mx-auto max-w-4xl px-6 py-16">
-        
-        <h1 className="text-4xl font-bold text-gray-900">
-          Anderson Iglesias
-        </h1>
+    <main className="min-h-screen bg-gray-50 text-gray-900">
+      <div className="mx-auto max-w-5xl px-6 py-24">
+        <section className="max-w-3xl">
+          <p className="text-sm font-semibold text-gray-500">
+            Ecossistema digital
+          </p>
 
-        <p className="mt-4 text-lg text-gray-600">
-          Coordenador de TI • Estratégia • Tecnologia • Produtos Digitais
-        </p>
+          <h1 className="mt-3 text-5xl font-bold tracking-tight">
+            Anderson Iglesias
+          </h1>
 
-        <p className="mt-6 text-gray-700 leading-relaxed">
-          Bem-vindo ao meu ecossistema digital. Aqui você encontrará
-          ferramentas inteligentes, simuladores financeiros, projetos
-          tecnológicos e conteúdos estratégicos desenvolvidos por mim.
-        </p>
+          <p className="mt-6 text-lg leading-relaxed text-gray-700">
+            Coordenador de TI. Estratégia, tecnologia e produtos digitais.
+            Aqui você encontra ferramentas práticas, projetos e conteúdos
+            construídos com foco em clareza e execução.
+          </p>
 
-        <div className="mt-10 flex flex-wrap gap-4">
-          <a
-            href="/ferramentas"
-            className="rounded-xl bg-black px-6 py-3 text-white hover:bg-gray-800 transition"
-          >
-            Acessar Ferramentas
-          </a>
+          <div className="mt-10 flex flex-wrap gap-3">
+            <Link
+              href="/ferramentas"
+              className="rounded-xl bg-black px-6 py-3 text-sm font-semibold text-white hover:opacity-90"
+            >
+              Ferramentas
+            </Link>
 
-          <a
-            href="#"
-            className="rounded-xl border border-gray-300 px-6 py-3 hover:bg-gray-100 transition"
-          >
-            Meus Cursos
-          </a>
+            <Link
+              href="/mensagem-do-dia"
+              className="rounded-xl border border-gray-300 bg-white px-6 py-3 text-sm font-semibold hover:bg-gray-100"
+            >
+              Mensagem do Dia
+            </Link>
 
-          <a
-            href="#"
-            className="rounded-xl border border-gray-300 px-6 py-3 hover:bg-gray-100 transition"
-          >
-            Projetos
-          </a>
-        </div>
+            <Link
+              href="/projetos"
+              className="rounded-xl border border-gray-300 bg-white px-6 py-3 text-sm font-semibold hover:bg-gray-100"
+            >
+              Projetos
+            </Link>
 
+            <Link
+              href="/cursos"
+              className="rounded-xl border border-gray-300 bg-white px-6 py-3 text-sm font-semibold hover:bg-gray-100"
+            >
+              Cursos
+            </Link>
+          </div>
+
+          <div className="mt-14 h-px w-full bg-gray-200" />
+
+          <div className="mt-10 grid gap-8 sm:grid-cols-3">
+            <div>
+              <div className="text-sm font-semibold">Ferramentas</div>
+              <p className="mt-2 text-sm leading-relaxed text-gray-600">
+                Simuladores e calculadoras para decisões rápidas e objetivas.
+              </p>
+            </div>
+
+            <div>
+              <div className="text-sm font-semibold">Mentalidade</div>
+              <p className="mt-2 text-sm leading-relaxed text-gray-600">
+                Mensagens diárias em formato curto: impacto, reflexão e ação.
+              </p>
+            </div>
+
+            <div>
+              <div className="text-sm font-semibold">Produtos</div>
+              <p className="mt-2 text-sm leading-relaxed text-gray-600">
+                Projetos e conteúdos que evoluem com consistência.
+              </p>
+            </div>
+          </div>
+
+          <footer className="mt-16 text-xs text-gray-500">
+            © {new Date().getFullYear()} Anderson Iglesias
+          </footer>
+        </section>
       </div>
     </main>
   );

@@ -1,4 +1,5 @@
 import "./globals.css";
+import Link from "next/link";
 
 export const metadata = {
   title: "Anderson Iglesias",
@@ -18,15 +19,34 @@ export default function RootLayout({
         <header className="border-b bg-white">
           <div className="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
             
-            <a href="/" className="font-bold text-lg">
+            <Link href="/" className="font-bold text-lg">
               Anderson Iglesias
-            </a>
+            </Link>
 
             <nav className="flex gap-6 text-sm">
-              <a href="/" className="hover:text-black text-gray-600">Home</a>
-              <a href="/ferramentas" className="hover:text-black text-gray-600">Ferramentas</a>
-              <a href="/cursos" className="hover:text-black text-gray-600">Cursos</a>
-              <a href="/projetos" className="hover:text-black text-gray-600">Projetos</a>
+              <Link href="/" className="hover:text-black text-gray-600">
+                Home
+              </Link>
+
+               <Link href="/sobre-mim" className="hover:text-black text-gray-600">
+                Sobre mim
+              </Link>
+
+              <Link href="/mensagem-do-dia" className="hover:text-black text-gray-600">
+                Mensagem do Dia
+              </Link>
+
+              <Link href="/ferramentas" className="hover:text-black text-gray-600">
+                Ferramentas
+              </Link>
+
+              <Link href="/cursos" className="hover:text-black text-gray-600">
+                Cursos
+              </Link>
+
+              <Link href="/projetos" className="hover:text-black text-gray-600">
+                Projetos
+              </Link>
             </nav>
 
           </div>

@@ -40,6 +40,9 @@ export default function RootLayout({
                 Ferramentas
               </Link>
 
+              <Link href="/politica" className="hover:text-black text-gray-600">Política</Link>
+              <Link href="/viagens" className="hover:text-black text-gray-600">Viagens</Link>
+
               <Link href="/cursos" className="hover:text-black text-gray-600">
                 Cursos
               </Link>

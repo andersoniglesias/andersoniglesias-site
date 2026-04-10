@@ -1,11 +1,9 @@
 import Link from "next/link";
-import { auth } from "@/lib/auth";
 import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
 
 export default async function AdminHome() {
-  const session = await auth();
   const posts = await prisma.post.findMany({
     orderBy: { updatedAt: "desc" },
     include: { category: true },
@@ -18,7 +16,7 @@ export default async function AdminHome() {
         <div>
           <h1 className="text-2xl font-bold">Painel</h1>
           <p className="mt-1 text-sm text-gray-600">
-            Logado como {(session as any)?.user?.email}
+            Área administrativa protegida.
           </p>
         </div>
 
